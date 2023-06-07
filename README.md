@@ -15,7 +15,7 @@
 ### StepZen
 To make an awesome graphQL API
 we use restfulAPI endpoint
-```
+```bash
 npm install -g stepzen
 ```
 
@@ -34,12 +34,15 @@ expo start
 ```
 
 ### Tailwind
-```
-https://github.com/vadimdemedes/tailwind-rn
+```bash
+// https://github.com/vadimdemedes/tailwind-rn
+npm install tailwind-rn
+npx setup-tailwind-rn
+// next follow the settings show in the cmd
 ```
 
 ### TypeScript customized type
-```
+```typescript
 export type RootStackParamList = {
   Main: undefined;
   MyModal: { userId: string; name: string };
