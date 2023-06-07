@@ -32,3 +32,27 @@ npm i -g expo-cli
 npx create-expo-app -t expo-template-blank-typescript
 expo start
 ```
+
+### Tailwind
+```
+https://github.com/vadimdemedes/tailwind-rn
+```
+
+### TypeScript customized type
+```
+export type RootStackParamList = {
+  Main: undefined;
+  MyModal: { userId: string; name: string };
+  Order: { order: any }; // will replace it later
+};
+const RootStack = createNativeStackNavigator<RootStackParamList>();
+```
+
+```
+export type TabStackParamList = {
+  Customers: undefined;
+  Orders: undefined;
+};
+const Tab = createBottomTabNavigator<TabStackParamList>();
+```
+
